@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project Solar System</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h2 id="Title">
+      <span class="UnderBorder">calculate weight of an object on a planet</span>
+    </h2>
+    <main>
+      <section id="Input" class="input-group" title="Enter the weight in kg">
+        <input
+          id="Mass"
+          type="number"
+          min="0"
+          placeholder=" Mass in KG"
+          class="input-element"
+          value="0"
+        />
+        <select
+          id="Planets"
+          class="input-element"
+          title="Select the Planets from here"
+        >
+          <option value="None" disabled selected>&nbsp; Select a planet</option>
+          <option value="Mercury">&nbsp;Mercury</option>
+          <option value="Venus">&nbsp;Venus</option>
+          <option value="Earth">&nbsp;Earth</option>
+          <option value="Mars">&nbsp;Mars</option>
+          <option value="Jupiter">&nbsp;Jupiter</option>
+          <option value="Saturn">&nbsp;Saturn</option>
+          <option value="Uranus">&nbsp;Uranus</option>
+          <option value="Neptune">&nbsp;Neptune</option>
+          <option value="Moon">&nbsp;Moon</option>
+          <option value="Pluto">&nbsp;Pluto</option>
+        </select>
+        <button
+          id="Calculate"
+          class="input-element"
+          title="Click to calculate weight"
+        >
+          calculate weight
+        </button>
+      </section>
+      <section id="OutputA" class="output output-groupA">
+        <div id="Requirements" class="requirements">
+          <span id="ReqText" class="UnderBorder"
+            >please enter the Mass and the Planet to calculate weight</span
+          >
+        </div>
+      </section>
+      <section id="OutputB" class="output output-groupB">
+        <img id="planetImage" src="image/earth.png" />
+        <div class="MassDetails">
+          <div class="resultTitle">
+            the weight of the object on
+            <span id="planetName" class="UnderBorder">Plante</span>
+            <div id="result">dfd</div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

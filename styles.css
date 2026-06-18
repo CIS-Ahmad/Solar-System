@@ -1,0 +1,107 @@
+body {
+  background-color: black;
+  background-image: url(image/galaxy.gif);
+}
+#Title {
+  color: white;
+  font-weight: bold;
+  font-size: 50px;
+  text-align: center;
+}
+.UnderBorder {
+  border-bottom: 1px aqua solid;
+  padding-bottom: 5px;
+}
+#Input {
+  margin-top: 50px;
+  justify-self: center;
+}
+.input-group {
+  background-color: #57565641;
+  margin: 0px;
+  margin-bottom: 20px;
+}
+.input-element {
+  height: 40px;
+  margin: 30px 15px;
+  background-color: black;
+  color: aqua;
+}
+#Mass {
+  width: 250px;
+  font-size: 20px;
+  padding: 0 10px;
+}
+#Planets {
+  width: 200px;
+  font-size: 18px;
+}
+#Calculate {
+  width: 125px;
+  background-color: #0000005a;
+  font-size: 15px;
+}
+.output {
+  width: 65%;
+  background-color: #57565641;
+  display: flex;
+  justify-self: center;
+  justify-content: center;
+  align-items: center;
+}
+.output-groupA {
+  height: 200px;
+}
+.requirements {
+  width: 65%;
+  height: 75px;
+  color: white;
+  background-color: #00000081;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.output-groupB {
+  height: 470px;
+  display: flex;
+  justify-content: center;
+  gap: 75px;
+  padding: 0px 20px;
+  display: none;
+}
+#planetImage {
+  height: 400px;
+}
+.MassDetails {
+  width: 500px;
+  height: 250px;
+  background-color: #000000a2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.resultTitle {
+  color: #ffffff85;
+  font-size: 20px;
+  font-weight: normal;
+}
+#planetName {
+  font-size: 30px;
+  color: white;
+}
+#result {
+  border-radius: 100px;
+  width: 150px;
+  height: 150px;
+  background-color: rgba(0, 0, 0, 0.729);
+  justify-self: center;
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  font-size: 15px;
+}
