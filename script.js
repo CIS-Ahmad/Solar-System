@@ -43,7 +43,7 @@ function updatePlanet()
     const plImage =GETElemntUsingID("planetImage");
     const PlName =GETElemntUsingID("planetName");
 
-    plImage.src = `./image/${PlanetName}.png`;;
+    plImage.src = `image/${PlanetName}.png`;;
     PlName.textContent = PlanetName;
 }
 
