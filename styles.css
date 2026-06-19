@@ -84,7 +84,7 @@ body {
   text-align: center;
 }
 .resultTitle {
-  color: #ffffff85;
+  color: #ffffffc3;
   font-size: 20px;
   font-weight: normal;
 }
@@ -105,4 +105,5 @@ body {
   align-items: center;
   font-size: 15px;
   font-weight: bolder;
+  color: white;
 }
