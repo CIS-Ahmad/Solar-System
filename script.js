@@ -126,7 +126,7 @@ function Main(FirstTime = true) {
 function CreateOpstion() {
 
     for (let i = 0; i < PlanetsName.length; i++) {
-        let Ops = CreateElement("option", null, null, null, `Planets`);
+        let Ops = CreateElement("option", null, `${PlanetsName[i]}`, null, `Planets`);
         Ops.value = PlanetsName[i];
         Ops.textContent = ` ${PlanetsName[i]}`;
     }
@@ -137,8 +137,24 @@ calculateBtn.addEventListener("click", () => {
     isActivated = true;
     Main();
 });
-PlanetsList.addEventListener("input", Main);
-massBox.addEventListener("input", Main);
+
+PlanetsList.addEventListener("input", () => {
+
+    if (PlanetsList.value !== 'None') {
+        GETElemntUsingID("None").disabled = true;
+    }
+    Main();
+
+});
+
+
+massBox.addEventListener("input", () => {
+
+    if (massBox.textContent) // 0 or empty
+        Mass = 0;
+    Main();
+
+});
 
 document.addEventListener("DOMContentLoaded", () => {
 
