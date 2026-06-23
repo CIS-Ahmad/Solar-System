@@ -141,7 +141,7 @@ calculateBtn.addEventListener("click", () => {
 PlanetsList.addEventListener("input", () => {
 
     if (PlanetsList.value !== 'None') {
-        GETElemntUsingID("None").style.display = "";
+        GETElemntUsingID("None").disabled = true;
     }
     Main();
 
